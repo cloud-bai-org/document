@@ -167,19 +167,17 @@ function renderSubBody(parentNum, role, task) {
 
 function writeBackIssueNums(raw, parentNum, feNum, beNum) {
   let out = raw;
-  // H1: 第一個 <!-- --> 為 parent
+  // `[ \t]*$`（而非 `\s*$`）才不會吃掉行尾的換行 → 不破壞段落間空白行
   out = out.replace(
-    /^(#\s+S\d+:\s+.+?)\s*<!--\s*-->\s*$/m,
+    /^(#\s+S\d+:\s+.+?)[ \t]*<!--[ \t]*-->[ \t]*$/m,
     `$1 <!-- #${parentNum} -->`
   );
-  // FE
   out = out.replace(
-    /^(- \[ \] FE:\s*.+?)\s*<!--\s*-->\s*$/m,
+    /^(- \[ \] FE:\s*.+?)[ \t]*<!--[ \t]*-->[ \t]*$/m,
     `$1 <!-- #${feNum} -->`
   );
-  // BE
   out = out.replace(
-    /^(- \[ \] BE:\s*.+?)\s*<!--\s*-->\s*$/m,
+    /^(- \[ \] BE:\s*.+?)[ \t]*<!--[ \t]*-->[ \t]*$/m,
     `$1 <!-- #${beNum} -->`
   );
   return out;

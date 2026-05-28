@@ -1,10 +1,12 @@
 # S04: 登出（單裝置 / 全部裝置） <!-- #10 -->
+
 **Journey**: login
 **Labels**: priority:medium
 **Story Dependencies**: S01
 **Sub-tasks**:
 - [ ] FE: 登出選項 UI <!-- #11 -->
 - [ ] BE: session 結束處理 <!-- #12 -->
+
 ## UX 操作流程
 
 1. 使用者於設定頁點「登出」
