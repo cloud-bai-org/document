@@ -1,12 +1,10 @@
-# S02: 第三方登入（Google / LINE / Facebook） <!-- -->
-
+# S02: 第三方登入（Google / LINE / Facebook） <!-- #4 -->
 **Journey**: login
 **Labels**: priority:high
 **Story Dependencies**: S01
 **Sub-tasks**:
-- [ ] FE: 第三方登入按鈕與授權跳轉 <!-- -->
-- [ ] BE: OAuth callback、帳號建立與綁定 <!-- -->
-
+- [ ] FE: 第三方登入按鈕與授權跳轉 <!-- #5 -->
+- [ ] BE: OAuth callback、帳號建立與綁定 <!-- #6 -->
 ## UX 操作流程
 
 1. 使用者在 `/login` 點選 Google / LINE / Facebook 任一

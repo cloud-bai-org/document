@@ -1,12 +1,10 @@
-# S01: Email + 密碼登入 <!-- -->
-
+# S01: Email + 密碼登入 <!-- #1 -->
 **Journey**: login
 **Labels**: priority:high
 **Story Dependencies**: 無
 **Sub-tasks**:
-- [ ] FE: 登入頁 UI 與表單驗證 <!-- -->
-- [ ] BE: 登入驗證與 session 建立 <!-- -->
-
+- [ ] FE: 登入頁 UI 與表單驗證 <!-- #2 -->
+- [ ] BE: 登入驗證與 session 建立 <!-- #3 -->
 ## UX 操作流程
 
 1. 使用者從訪客模式或設定頁點「登入」進入 `/login`
